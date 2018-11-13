@@ -28,7 +28,6 @@
 			"\tautonomousChooser.addClass(\"0: $3\", new $3());",
 			"",
 			"",
-			"",
 			"//Place autonomousChooser on the SmartDashboard",
 			"SmartDashboard.putData(\"Autonomous Chooser\", autonomousChooser);",
 			"}",
