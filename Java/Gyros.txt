@@ -1,0 +1,85 @@
+	"Gyro NavX Imports":{
+		"description": "Create Required Imports",
+		"prefix": "Gyro NavX Imports",
+		"body": [
+			"import edu.wpi.first.wpilibj.DriverStation;",
+			"import com.kauailabs.navx.frc.AHRS;",
+		]
+	},
+	"Gyro NavX Definition":{
+		"description": "Create the Class Definition",
+		"prefix": "Gyro NavX Declare",
+		"body": "public static AHRS ahrs;",
+	},
+	"Gyro NavX Instantiate":{
+		"description": "Instantiate the Class",
+		"prefix": "Gyro NavX Init",
+		"body": [
+			"",
+			"",
+			"//Create Gyro",
+			"/******Must add      import edu.wpi.first.wpilibj.DriverStation;      *****/",
+			"/******Must add      import com.kauailabs.navx.frc.AHRS;              *****/",
+			"/******Must add      public static AHRS ahrs;                         *****/",
+			"try {",
+			"\tSystem.out.println(\"Hello Tying to INIT Navx\");",
+			"\t/* Communicate w/navX MXP via the MXP SPI Bus.                                    */",
+			"\t/* Alternatively:  I2C.Port.kMXP, SerialPort.Port.kMXP or SerialPort.Port.kUSB     */",
+			"\t/* See http://navx-mxp.kauailabs.com/guidance/selecting-an-interface/ for details. */",
+			"",
+			"\t//ahrs = new AHRS(SPI.Port.kMXP);",
+			"\t$1ahrs = new AHRS(I2C.Port.kMXP);",
+			"\t//ahrs = new AHRS(SerialPort.Port.kUSB);",
+			"\t//ahrs = new AHRS(I2C.Port.kOnboard);",
+			"\t//ahrs = new AHRS(I2C.Port.kOnboard,(byte)200);",
+			"",	
+			"} catch (RuntimeException ex ) {",
+			"\tSystem.out.println(\"Hello from the Navx runtimeExcept\");",
+			"\tDriverStation.reportError(\"Error instantiating navX MXP:  \" + ex.getMessage(), true);",
+			"}",
+		]
+	},
+	"Gyro_adrxs450 Imports":{
+		"description": "Create Required Imports",
+		"prefix": "Gyro_adrxs450 Imports",
+		"body": [
+			"import edu.wpi.first.wpilibj.ADXRS450_Gyro;",
+		]
+	},
+	"Gyro_adrxs450 Class":{
+		"description": "Create the Class Definition",
+		"prefix": "Gyro_adrxs450 Declare",
+		"body": "public static ADXRS450_Gyro adrxs450_Gyro;",
+	},
+	"Gyro_adrxs450 Instantiate":{
+		"description": "Instantiate the Class",
+		"prefix": "Gyro adrxs450",
+		"body": [
+			"try{",
+			"\tDriverStation.reportWarning(\"Init ADXRS450_Gyro\", false);",
+			"\tadrxs450_Gyro = new ADXRS450_Gyro();",
+			"}catch (RuntimeException ex ) {",
+			"\tSystem.out.println(\"Hello from the adrxs450_Gyro runtimeExcept\");",
+			"\tDriverStation.reportError(\"Error instantiating adrxs450_Gyro:  \" + ex.getMessage(), true);",
+			"}",
+		]
+	},
+	"Gyro Pigeon Imports":{
+		"description": "Create Required Imports",
+		"prefix": "Gyro Prgeon Improrts",
+		"body": "import com.ctre.phoenix.sensors.*;"
+	},
+	"Gyro Pigeon Class":{
+		"description": "Create the Class Definition",
+		"prefix": "Gyro Pigeon Declare",
+		"body": "PigeonIMU _pidgey;"
+	},
+	"Gyro Pigeon Instantiate":{
+		"description": "Instantiate the Class",
+		"prefix": "Gyro Pigeon",
+		"body": [
+			"/* choose which cabling method for Pigeon */",
+			"//_pidgey = new PigeonImu(0); /* Pigeon is on CANBus (powered from ~12V, and has a device ID of zero */",
+			"$1_pidgey = new PigeonIMU($2); /* Pigeon is ribbon cabled to the specified CANTalon. */",
+		]	
+	},
