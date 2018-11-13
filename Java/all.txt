@@ -1,19 +1,19 @@
-    "NavX Imports":{
-		"description": "Required Imports",
-		"prefix": "NavX Imports",
+	"Gyro NavX Imports":{
+		"description": "Create Required Imports",
+		"prefix": "Gyro NavX Imports",
 		"body": [
 			"import edu.wpi.first.wpilibj.DriverStation;",
 			"import com.kauailabs.navx.frc.AHRS;",
 		]
 	},
-	"NavX Object":{
-		"description": "Create the Object",
-		"prefix": "NavX Declare",
+	"Gyro NavX Definition":{
+		"description": "Create the Class Definition",
+		"prefix": "Gyro NavX Declare",
 		"body": "public static AHRS ahrs;",
 	},
-	"NavX":{
-		"description": "Initiate the Object",
-		"prefix": "NavX Init",
+	"Gyro NavX Instantiate":{
+		"description": "Instantiate the Class",
+		"prefix": "Gyro NavX Init",
 		"body": [
 			"",
 			"",
@@ -40,19 +40,19 @@
 		]
 	},
 	"Gyro_adrxs450 Imports":{
-		"description": "Required Imports",
+		"description": "Create Required Imports",
 		"prefix": "Gyro_adrxs450 Imports",
 		"body": [
 			"import edu.wpi.first.wpilibj.ADXRS450_Gyro;",
 		]
 	},
-	"Gyro_adrxs450 Object":{
-		"description": "Create the Object",
+	"Gyro_adrxs450 Class":{
+		"description": "Create the Class Definition",
 		"prefix": "Gyro_adrxs450 Declare",
 		"body": "public static ADXRS450_Gyro adrxs450_Gyro;",
 	},
-	"Gyro_adrxs450":{
-		"description": "Initiate the Object",
+	"Gyro_adrxs450 Instantiate":{
+		"description": "Instantiate the Class",
 		"prefix": "Gyro adrxs450",
 		"body": [
 			"try{",
@@ -65,17 +65,17 @@
 		]
 	},
 	"Gyro Pigeon Imports":{
-		"description": "Required Imports",
+		"description": "Create Required Imports",
 		"prefix": "Gyro Prgeon Improrts",
 		"body": "import com.ctre.phoenix.sensors.*;"
 	},
-	"Gyro Pigeon Object":{
-		"description": "Create the Object",
+	"Gyro Pigeon Class":{
+		"description": "Create the Class Definition",
 		"prefix": "Gyro Pigeon Declare",
 		"body": "PigeonIMU _pidgey;"
 	},
-	"Gyro Pigeon":{
-		"description": "Initiate the Object",
+	"Gyro Pigeon Instantiate":{
+		"description": "Instantiate the Class",
 		"prefix": "Gyro Pigeon",
 		"body": [
 			"/* choose which cabling method for Pigeon */",
@@ -91,7 +91,7 @@
 			"\t$1Chooser = new SendableChooser<>();",
 			"",
 			"\t$1Chooser.addDefault(\"$2\", 0);",
-			"\t$1Chooser.addObject(\"#3\", 1);",
+			"\t$1Chooser.addClass(\"#3\", 1);",
 			"",
 			"\tSmartDashboard.putData(\"$1 Chooser\", $1Chooser);",
 			"}",
@@ -110,7 +110,7 @@
 			"\tautonomousChooser.addDefault(\"99: Auto_99\", new Auto_99());",					
 			"",
 			"\t// ******* Basic Auto",
-			"\tautonomousChooser.addObject(\"0: Auto_00 Reach BaseLine\", new Auto_00_Reach_BaseLine());",
+			"\tautonomousChooser.addClass(\"0: Auto_00 Reach BaseLine\", new Auto_00_Reach_BaseLine());",
 			"",
 			"",
 			"",
