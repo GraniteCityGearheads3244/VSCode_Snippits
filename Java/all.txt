@@ -83,9 +83,9 @@
 			"$1_pidgey = new PigeonIMU($2); /* Pigeon is ribbon cabled to the specified CANTalon. */",
 		]	
 	},
-	"AutoChooser INT":{
-		"description": "",
-		"prefix": "",
+		"AutoChooser INT":{
+		"description": "Creates an Auto chooser that returns a Integer value",
+		"prefix": "AutoChooser <Integer>",
 		"body": [
 			"private void setup$1Chooser() {",
 			"\t$1Chooser = new SendableChooser<>();",
@@ -99,7 +99,7 @@
 	},
 	"AutoChooser Command":{
 		"description": "",
-		"prefix": "",
+		"prefix": "AutoChooser <Command>",
 		"body": [
 			"private void setupAutomousChooser(){",
 			"\t//Create the Auto Chooser",
@@ -107,15 +107,16 @@
 			"\tautonomousChooser = new SendableChooser();",
 			"",
 			"\t// ******* Default Auto",
-			"\tautonomousChooser.addDefault(\"99: Auto_99\", new Auto_99());",					
+			"\tautonomousChooser.addDefault(\"99: $2\", new $2());",					
 			"",
 			"\t// ******* Basic Auto",
-			"\tautonomousChooser.addClass(\"0: Auto_00 Reach BaseLine\", new Auto_00_Reach_BaseLine());",
+			"\tautonomousChooser.addClass(\"0: $3\", new $3());",
 			"",
 			"",
 			"",
 			"//Place autonomousChooser on the SmartDashboard",
 			"SmartDashboard.putData(\"Autonomous Chooser\", autonomousChooser);",
-			"}",	
+			"}",
+			"",	
 		]
 	},

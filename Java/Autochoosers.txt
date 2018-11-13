@@ -1,6 +1,6 @@
-	"AutoChooser INT":{
-		"description": "",
-		"prefix": "",
+		"AutoChooser INT":{
+		"description": "Creates an Auto chooser that returns a Integer value",
+		"prefix": "AutoChooser <Integer>",
 		"body": [
 			"private void setup$1Chooser() {",
 			"\t$1Chooser = new SendableChooser<>();",
@@ -14,7 +14,7 @@
 	},
 	"AutoChooser Command":{
 		"description": "",
-		"prefix": "",
+		"prefix": "AutoChooser <Command>",
 		"body": [
 			"private void setupAutomousChooser(){",
 			"\t//Create the Auto Chooser",
@@ -31,6 +31,7 @@
 			"",
 			"//Place autonomousChooser on the SmartDashboard",
 			"SmartDashboard.putData(\"Autonomous Chooser\", autonomousChooser);",
-			"}",	
+			"}",
+			"",	
 		]
-    },
+	},
