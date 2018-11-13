@@ -117,5 +117,5 @@
 			"//Place autonomousChooser on the SmartDashboard",
 			"SmartDashboard.putData(\"Autonomous Chooser\", autonomousChooser);",
 			"}",	
-		],
-	}
+		]
+	},
