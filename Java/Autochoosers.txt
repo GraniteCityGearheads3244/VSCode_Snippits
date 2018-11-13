@@ -10,6 +10,7 @@
 			"",
 			"\tSmartDashboard.putData(\"$1 Chooser\", $1Chooser);",
 			"}",
+			"",
 		]
 	},
 	"AutoChooser Command":{
