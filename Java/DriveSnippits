@@ -1,0 +1,28 @@
+"myRobotDrive":{
+		"description": "Method in Subsytem DriveTrain to Drive Robot in Archade",
+		"prefix": "public void myRobotDrive",
+		"body": [
+			"public void ${1:myRobotDrive}(double moveValue, double rotateValue) {",
+			"\trobotDrive21.arcadeDrive(moveValue, rotateValue, true);",
+			"}",
+			"",
+		],
+	},
+	"MyRobotDrive_Control":{
+		"description": "Gets Joystick and sends data to the the Robot Drive",
+		"prefix": "Robot.driveTrain.myRobotDrive Control",
+		"body": [
+			"double moveValue = Robot.oi.xboxController.getRawAxis(${1:1});",
+        	"double rotateValue = Robot.oi.xboxController.getRawAxis(${2:2});",
+			"",
+        	"Robot.driveTrain.myRobotDrive(moveValue, rotateValue);",
+		],
+	},
+	"MyRobotDrive_Stop":{
+		"description": "Stops Robot Drive",
+		"prefix": "Robot.driveTrain.myRobotDrive Stop",
+		"body": [
+        	"Robot.driveTrain.myRobotDrive(0,0);",
+		],
+		
+	},
