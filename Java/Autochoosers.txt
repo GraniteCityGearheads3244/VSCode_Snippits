@@ -2,6 +2,9 @@
 		"description": "Creates an Auto chooser that returns a Integer value",
 		"prefix": "AutoChooser <Integer>",
 		"body": [
+			"//Cut-Paste the next line to the robotInit() method",
+			"setup$1Chooser();",
+			"",
 			"SendableChooser $1Chooser;",
 			"",
 			"private void setup$1Chooser() {",
@@ -19,6 +22,9 @@
 		"description": "",
 		"prefix": "AutoChooser <Command>",
 		"body": [
+			"//Cut-Paste the next line to the robotInit() method",
+			"setup$1Chooser();",
+			"",
 			"SendableChooser $1Chooser;",
 			"",
 			"private void setupAutomousChooser(){",
