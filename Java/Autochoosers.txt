@@ -1,12 +1,14 @@
-		"AutoChooser INT":{
+"AutoChooser INT":{
 		"description": "Creates an Auto chooser that returns a Integer value",
 		"prefix": "AutoChooser <Integer>",
 		"body": [
+			"SendableChooser $1Chooser;",
+			"",
 			"private void setup$1Chooser() {",
 			"\t$1Chooser = new SendableChooser<>();",
 			"",
 			"\t$1Chooser.addDefault(\"$2\", 0);",
-			"\t$1Chooser.addClass(\"#3\", 1);",
+			"\t$1Chooser.addObject(\"#3\", 1);",
 			"",
 			"\tSmartDashboard.putData(\"$1 Chooser\", $1Chooser);",
 			"}",
@@ -17,6 +19,8 @@
 		"description": "",
 		"prefix": "AutoChooser <Command>",
 		"body": [
+			"SendableChooser $1Chooser;",
+			"",
 			"private void setupAutomousChooser(){",
 			"\t//Create the Auto Chooser",
 			"\t//SmartDashboard.putString(\"autonomous Title\", \"Autonomous Choice\");",
