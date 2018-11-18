@@ -1,0 +1,9 @@
+Configure a remote Repository
+    https://www.youtube.com/watch?v=I7WfxhF2wEg
+    syncToGithub
+        1 Create Repository On Github
+            do not initate
+        2 open folder on VSCode
+        3 Open terminal Ctrl+`
+        4 Run git init (Might not have to do for WPILib VSCode)
+        5 run git remote add origin https://github.com/*Your Remote Repository*.git
