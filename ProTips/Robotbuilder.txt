@@ -1,2 +1,2 @@
 Hide the ~ files
-(File > Preferences > Settings > Exclude) where adding **/**.*~ will hide these files
+(File > Preferences > Settings > Exclude) where adding **/*.*~ will hide these files
