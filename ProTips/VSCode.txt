@@ -1,1 +1,4 @@
-Close All Ctrl+k w
+Close All [Ctrl+k w]
+Save All [Ctrl+k s]
+Command Palette [Ctrl+Shift+p]
+Teminal [Ctrl+`]
